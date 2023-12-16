@@ -14,8 +14,6 @@ controlPlane:
   replicas: 3
 
 networking:
-  machineNetwork:
-  - cidr: 192.168.2.0/24    # May not be necessary
   clusterNetwork:
   - cidr: 10.128.0.0/14 
     hostPrefix: 23 
@@ -28,4 +26,3 @@ platform:
 
 pullSecret: '{"auths":{"fake":{"auth": "bar"}}}'
 sshKey: 'ssh-ed25519 AAAA...'   
-#tested load from .openshit/pull-secret, but failed
