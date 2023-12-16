@@ -11,8 +11,7 @@ network:
   lab_broadcast: 192.168.2.255
   lab_router: 192.168.2.1
 dns:
-  domain: homelab.local
-#  subdomain1: okd.homelab.local
+  domain: example.com
   clusterid: okd
 okd:
 # [4.5]
@@ -47,8 +46,8 @@ okd:
   
 jq_file: https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
 user:
-  name: ansiblebot
-  home: /home/ansiblebot
+  name: oc
+  home: /home/oc
 valet:
   name: lab-valet
   ip: 192.168.2.196
