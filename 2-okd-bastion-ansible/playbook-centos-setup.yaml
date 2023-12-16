@@ -1,0 +1,68 @@
+---
+  - hosts: nodes
+    become: true
+    tasks:
+      - name: Create a linux user devops
+        command: useradd devops
+        ignore_errors: yes # ignore is true because i was testing the system and if the user already exists it was causing errors
+        register: command_result
+        failed_when: 
+          - command_result.rc == 9
+          - "'exists' in command_result.stderr"
+  
+      - name: Install yum-utils, bzip2(bzip), git, wget, openssl-devel, (apache)httpd packages
+        package: 
+          name:
+            - yum-utils
+            - bzip2
+            - git
+            - wget
+            - openssl-devel
+            - httpd
+          state: present
+        ignore_errors: yes # if packages already exists
+  
+      - name: Add Docker repo
+        get_url:
+          url: https://download.docker.com/linux/centos/docker-ce.repo
+          dest: /etc/yum.repos.d/docer-ce.repo
+        become: yes # Become. Ansible allows you to 'become' another user, different from the user that logged into the machine (remote user)
+  
+      - name: Install Docker
+        package:
+          name: docker-ce
+          state: latest
+        become: yes
+  
+      - name: Start Docker service
+        service:
+          name: docker
+          state: started
+          enabled: yes
+        become: yes
+      
+      
+      - name: Create "docker" group
+        group:
+          name: docker
+          state: present
+        tags:
+          - docker
+        ignore_errors: yes
+      
+      - name: Add remote "devops" user to "docker" group
+        user:
+          name: devops
+          group: docker
+          append: yes
+        tags:
+          - docker
+        ignore_errors: yes
+  
+      - name: Ensure docker-compose is installed and available
+        shell: curl -L https://github.com/docker/compose/releases/download/1.7.0-rc1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+      
+      - name: Make docker compose file executable
+        file:
+          path: /usr/local/bin/docker-compose
+          mode: u=rwx,g=rwx,o=rwx

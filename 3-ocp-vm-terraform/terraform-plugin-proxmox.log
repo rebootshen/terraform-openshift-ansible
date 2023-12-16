@@ -1,0 +1,466 @@
+2023/12/13 16:13:42 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:13:42 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:13:42 [DEBUG][QemuVmCreate] recycling VM vmId: 600
+2023/12/13 16:13:50 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 16:13:50 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 16:13:52 [DEBUG] VM status: stopped
+2023/12/13 16:15:29 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:15:29 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:16:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:16:03 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:17:40 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:17:40 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:21:58 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:21:58 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:31:49 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 16:31:49 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 16:31:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 16:31:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 16:31:57 [DEBUG] VM status: stopped
+2023/12/13 17:03:57 [DEBUG] VM status: running
+2023/12/13 17:05:07 [DEBUG] VM status: running
+2023/12/13 17:06:45 [DEBUG] VM status: running
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:06:47 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 17:06:47 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 17:06:47 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 17:06:47 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 17:06:54 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:06:54 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:06:55 [DEBUG] VM status: stopped
+2023/12/13 17:06:55 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 17:06:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:06:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:06:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:06:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:06:57 [DEBUG] VM status: stopped
+2023/12/13 17:06:57 [DEBUG] VM status: stopped
+2023/12/13 17:06:57 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 17:06:58 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:06:58 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:06:59 invalid bootorder: device 'ide2' does not exist'
+2023/12/13 17:06:59 [DEBUG] VM status: stopped
+2023/12/13 17:07:02 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:07:02 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:07:02 [DEBUG] VM status: stopped
+2023/12/13 17:07:04 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:07:04 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:07:04 [DEBUG] VM status: stopped
+2023/12/13 17:08:50 [DEBUG] VM status: stopped
+2023/12/13 17:08:50 [DEBUG] VM status: stopped
+2023/12/13 17:08:50 [DEBUG] VM status: stopped
+2023/12/13 17:08:51 [DEBUG] VM status: stopped
+2023/12/13 17:08:51 [DEBUG] VM status: stopped
+2023/12/13 17:08:51 [DEBUG] VM status: stopped
+2023/12/13 17:08:51 [DEBUG] VM status: stopped
+2023/12/13 17:09:10 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:10 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:10 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:11 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:11 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:11 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:11 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:11 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:13 [DEBUG] VM status: running
+2023/12/13 17:09:13 [DEBUG] VM status: running
+2023/12/13 17:09:14 [DEBUG] VM status: running
+2023/12/13 17:09:14 [DEBUG] VM status: running
+2023/12/13 17:09:24 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:24 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:26 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:26 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:26 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 17:09:26 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 17:09:27 [DEBUG] VM status: running
+2023/12/13 17:09:29 [DEBUG] VM status: running
+2023/12/13 17:09:29 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:21 [DEBUG] VM status: running
+2023/12/13 17:10:22 [DEBUG] VM status: running
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 17:11:03 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:11:03 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 17:11:03 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 17:11:03 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 17:11:10 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:10 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:10 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 17:11:13 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:13 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:13 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:13 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:13 [DEBUG] VM status: stopped
+2023/12/13 17:11:13 [DEBUG] VM status: stopped
+2023/12/13 17:11:13 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 17:11:14 [DEBUG] VM status: stopped
+2023/12/13 17:11:14 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 17:11:15 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:15 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:15 [DEBUG] VM status: stopped
+2023/12/13 17:11:18 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:18 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:18 [DEBUG] VM status: stopped
+2023/12/13 17:11:20 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:20 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:21 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:11:21 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:11:21 [DEBUG] VM status: stopped
+2023/12/13 17:11:21 [DEBUG] VM status: stopped
+2023/12/13 17:14:56 [DEBUG] VM status: stopped
+2023/12/13 17:14:56 [DEBUG] VM status: running
+2023/12/13 17:14:57 [DEBUG] VM status: running
+2023/12/13 17:14:57 [DEBUG] VM status: running
+2023/12/13 17:14:57 [DEBUG] VM status: stopped
+2023/12/13 17:14:57 [DEBUG] VM status: stopped
+2023/12/13 17:14:57 [DEBUG] VM status: running
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 17:22:12 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 17:22:12 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 17:22:12 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 17:22:12 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 17:22:19 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:19 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:19 [DEBUG] VM status: stopped
+2023/12/13 17:22:19 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:21 [DEBUG] VM status: stopped
+2023/12/13 17:22:21 [DEBUG] VM status: stopped
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 17:22:21 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 17:22:23 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:23 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:23 [DEBUG] VM status: stopped
+2023/12/13 17:22:26 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:27 [DEBUG] VM status: stopped
+2023/12/13 17:22:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:29 [DEBUG] VM status: stopped
+2023/12/13 17:22:30 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 17:22:30 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 17:22:31 [DEBUG] VM status: stopped
+2023/12/13 19:01:25 [DEBUG] VM status: stopped
+2023/12/13 19:01:25 [DEBUG] VM status: stopped
+2023/12/13 19:01:26 [DEBUG] VM status: stopped
+2023/12/13 19:01:26 [DEBUG] VM status: stopped
+2023/12/13 19:01:26 [DEBUG] VM status: stopped
+2023/12/13 19:01:26 [DEBUG] VM status: stopped
+2023/12/13 19:01:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 19:01:48 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 19:01:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 19:01:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 19:01:57 [DEBUG] VM status: stopped
+2023/12/13 19:02:01 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:01 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:01 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:01 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:02 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:02 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:04 [DEBUG] VM status: running
+2023/12/13 19:02:04 [DEBUG] VM status: running
+2023/12/13 19:02:05 [DEBUG] VM status: running
+2023/12/13 19:02:09 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:09 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:12 [DEBUG] VM status: running
+2023/12/13 19:02:17 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:17 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:17 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 19:02:17 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 19:02:19 [DEBUG] VM status: running
+2023/12/13 19:02:19 [DEBUG] VM status: running
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:51:57 [DEBUG] VM status: stopped
+2023/12/13 20:52:49 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 20:52:49 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 20:52:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 20:52:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 20:52:58 [DEBUG] VM status: stopped
+2023/12/13 20:53:02 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 20:53:02 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 20:53:02 [INFO][initConnInfo] qemu agent is disabled from proxmox config, cant comunicate with vm.
+2023/12/13 20:53:02 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 20:53:02 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 20:53:02 [DEBUG][QemuVmUpdate] starting VM
+2023/12/13 20:53:05 [DEBUG] VM status: running
+2023/12/13 20:53:05 [DEBUG] VM status: running
+2023/12/13 20:53:05 [DEBUG] VM status: running
+2023/12/13 21:00:48 [DEBUG] VM status: stopped
+2023/12/13 21:00:48 [DEBUG] VM status: stopped
+2023/12/13 21:00:48 [DEBUG] VM status: running
+2023/12/13 21:00:48 [DEBUG] VM status: running
+2023/12/13 21:00:48 [DEBUG] VM status: stopped
+2023/12/13 21:00:49 [DEBUG] VM status: stopped
+2023/12/13 21:00:49 [DEBUG] VM status: running
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 21:12:19 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 21:12:19 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 21:12:19 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 21:12:19 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 21:12:26 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:27 [DEBUG] VM status: stopped
+2023/12/13 21:12:27 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 21:12:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:29 [DEBUG] VM status: stopped
+2023/12/13 21:12:29 [DEBUG] VM status: stopped
+2023/12/13 21:12:29 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 21:12:29 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 21:12:30 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:30 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:31 [DEBUG] VM status: stopped
+2023/12/13 21:12:34 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:34 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:35 [DEBUG] VM status: stopped
+2023/12/13 21:12:36 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:36 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:37 [DEBUG] VM status: stopped
+2023/12/13 21:12:38 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 21:12:38 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 21:12:39 [DEBUG] VM status: stopped
+2023/12/13 21:23:48 [DEBUG] VM status: running
+2023/12/13 21:23:48 [DEBUG] VM status: running
+2023/12/13 21:23:48 [DEBUG] VM status: running
+2023/12/13 21:23:49 [DEBUG] VM status: running
+2023/12/13 21:23:49 [DEBUG] VM status: running
+2023/12/13 21:23:49 [DEBUG] VM status: running
+2023/12/13 21:23:49 [DEBUG] VM status: running
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:34 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 22:26:34 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 22:26:34 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 22:26:34 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 22:26:34 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 22:26:41 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:41 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:41 [DEBUG] VM status: stopped
+2023/12/13 22:26:41 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:43 [DEBUG] VM status: stopped
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 22:26:43 [DEBUG] VM status: stopped
+2023/12/13 22:26:43 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 22:26:45 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:45 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:45 [DEBUG] VM status: stopped
+2023/12/13 22:26:48 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:48 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:49 [DEBUG] VM status: stopped
+2023/12/13 22:26:50 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:50 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:51 [DEBUG] VM status: stopped
+2023/12/13 22:26:52 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 22:26:52 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 22:26:53 [DEBUG] VM status: stopped
+2023/12/13 23:05:43 [DEBUG] VM status: stopped
+2023/12/13 23:05:43 [DEBUG] VM status: running
+2023/12/13 23:05:44 [DEBUG] VM status: stopped
+2023/12/13 23:05:44 [DEBUG] VM status: stopped
+2023/12/13 23:05:44 [DEBUG] VM status: stopped
+2023/12/13 23:05:44 [DEBUG] VM status: stopped
+2023/12/13 23:05:44 [DEBUG] VM status: stopped
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:07:47 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 23:07:47 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 23:07:47 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 23:07:47 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 23:07:54 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:07:54 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:07:54 [DEBUG] VM status: stopped
+2023/12/13 23:07:54 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 23:07:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:07:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:07:56 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:07:56 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:07:57 [DEBUG] VM status: stopped
+2023/12/13 23:07:57 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 23:07:57 [DEBUG] VM status: stopped
+2023/12/13 23:07:57 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 23:07:58 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:07:58 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:07:59 [DEBUG] VM status: stopped
+2023/12/13 23:08:02 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:08:02 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:08:03 [DEBUG] VM status: stopped
+2023/12/13 23:08:04 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:08:04 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:08:04 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:08:04 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:08:04 [DEBUG] VM status: stopped
+2023/12/13 23:08:05 [DEBUG] VM status: stopped
+2023/12/13 23:28:58 [DEBUG] VM status: running
+2023/12/13 23:28:58 [DEBUG] VM status: running
+2023/12/13 23:28:58 [DEBUG] VM status: running
+2023/12/13 23:28:59 [DEBUG] VM status: running
+2023/12/13 23:28:59 [DEBUG] VM status: running
+2023/12/13 23:28:59 [DEBUG] VM status: running
+2023/12/13 23:28:59 [DEBUG] VM status: running
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/13 23:30:01 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/13 23:30:01 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/13 23:30:01 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/13 23:30:01 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/13 23:30:08 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:08 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:09 [DEBUG] VM status: stopped
+2023/12/13 23:30:09 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/13 23:30:10 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:10 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:10 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:10 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:11 [DEBUG] VM status: stopped
+2023/12/13 23:30:11 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/13 23:30:11 [DEBUG] VM status: stopped
+2023/12/13 23:30:11 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/13 23:30:12 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:12 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:13 [DEBUG] VM status: stopped
+2023/12/13 23:30:16 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:16 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:16 [DEBUG] VM status: stopped
+2023/12/13 23:30:18 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:18 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:18 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/13 23:30:18 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/13 23:30:18 [DEBUG] VM status: stopped
+2023/12/13 23:30:19 [DEBUG] VM status: stopped
+2023/12/14 00:21:54 [DEBUG] VM status: running
+2023/12/14 00:21:54 [DEBUG] VM status: running
+2023/12/14 00:21:54 [DEBUG] VM status: running
+2023/12/14 00:21:55 [DEBUG] VM status: running
+2023/12/14 00:21:55 [DEBUG] VM status: running
+2023/12/14 00:21:55 [DEBUG] VM status: running
+2023/12/14 00:21:55 [DEBUG] VM status: running
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/14 00:41:48 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 00:41:48 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/14 00:41:48 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/14 00:41:55 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:41:55 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:41:55 [DEBUG] VM status: stopped
+2023/12/14 00:41:55 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:41:57 [DEBUG] VM status: stopped
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/14 00:41:57 [DEBUG] VM status: stopped
+2023/12/14 00:41:57 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/14 00:41:59 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:41:59 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:41:59 [DEBUG] VM status: stopped
+2023/12/14 00:42:02 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:42:02 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:42:03 [DEBUG] VM status: stopped
+2023/12/14 00:42:05 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:42:05 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:42:05 [DEBUG] VM status: stopped
+2023/12/14 00:42:07 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 00:42:07 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 00:42:07 [DEBUG] VM status: stopped
+2023/12/14 01:12:19 [DEBUG] VM status: running
+2023/12/14 01:12:19 [DEBUG] VM status: stopped
+2023/12/14 01:12:19 [DEBUG] VM status: stopped
+2023/12/14 01:12:20 [DEBUG] VM status: running
+2023/12/14 01:12:20 [DEBUG] VM status: running
+2023/12/14 01:12:20 [DEBUG] VM status: running
+2023/12/14 01:12:20 [DEBUG] VM status: stopped
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/14 10:42:05 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/14 10:42:05 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/14 10:42:05 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/14 10:42:05 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/14 10:42:12 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:12 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:13 [DEBUG] VM status: stopped
+2023/12/14 10:42:13 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/14 10:42:14 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:14 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:14 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:14 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:15 [DEBUG] VM status: stopped
+2023/12/14 10:42:15 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/14 10:42:15 [DEBUG] VM status: stopped
+2023/12/14 10:42:15 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/14 10:42:16 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:16 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:17 [DEBUG] VM status: stopped
+2023/12/14 10:42:20 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:20 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:20 [DEBUG] VM status: stopped
+2023/12/14 10:42:22 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:22 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:23 [DEBUG] VM status: stopped
+2023/12/14 10:42:24 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/14 10:42:24 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/14 10:42:25 [DEBUG] VM status: stopped

@@ -1,0 +1,31 @@
+apiVersion: v1
+baseDomain: {{ dns.domain }}
+metadata:
+  name: {{ dns.clusterid }}
+
+compute:
+- hyperthreading: Enabled
+  name: worker
+  replicas: 3
+
+controlPlane:
+  hyperthreading: Enabled
+  name: master
+  replicas: 3
+
+networking:
+  machineNetwork:
+  - cidr: 192.168.2.0/24    # May not be necessary
+  clusterNetwork:
+  - cidr: 10.128.0.0/14 
+    hostPrefix: 23 
+  networkType: OVNKubernetes
+  serviceNetwork: 
+  - 172.30.0.0/16
+
+platform:
+  none: {}
+
+pullSecret: '{"auths":{"fake":{"auth": "bar"}}}'
+sshKey: 'ssh-ed25519 AAAA...'   
+#tested load from .openshit/pull-secret, but failed
