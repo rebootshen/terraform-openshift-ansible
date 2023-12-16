@@ -702,3 +702,69 @@
 2023/12/16 22:41:58 [DEBUG][initConnInfo] this is the vm configuration: 192.168.2.196 22
 2023/12/16 22:41:58 [DEBUG][QemuVmCreate] vm creation done!
 2023/12/16 22:41:59 [DEBUG] VM status: running
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:13 [DEBUG] VM status: stopped
+2023/12/16 23:24:14 [DEBUG] VM status: stopped
+2023/12/16 23:24:15 [DEBUG] VM status: running
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG][QemuVmCreate] checking for duplicate name: worker2
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG][QemuVmCreate] checking for duplicate name: master0
+2023/12/16 23:25:22 [DEBUG][QemuVmCreate] checking for duplicate name: worker1
+2023/12/16 23:25:22 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/16 23:25:22 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/16 23:25:30 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:30 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:30 [DEBUG] VM status: stopped
+2023/12/16 23:25:30 [DEBUG][QemuVmCreate] checking for duplicate name: worker0
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:32 [DEBUG] VM status: stopped
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] checking for duplicate name: master1
+2023/12/16 23:25:32 [DEBUG] VM status: stopped
+2023/12/16 23:25:32 [DEBUG][QemuVmCreate] checking for duplicate name: master2
+2023/12/16 23:25:34 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:34 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:34 [DEBUG] VM status: stopped
+2023/12/16 23:25:34 [DEBUG][QemuVmCreate] checking for duplicate name: okd-bastion
+2023/12/16 23:25:34 [DEBUG][QemuVmCreate] cloning VM
+2023/12/16 23:25:37 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:37 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:38 [DEBUG] VM status: stopped
+2023/12/16 23:25:39 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:39 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:40 [DEBUG] VM status: stopped
+2023/12/16 23:25:41 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/16 23:25:41 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:25:42 [DEBUG] VM status: stopped
+2023/12/16 23:26:08 [DEBUG][QemuVmCreate] starting VM
+2023/12/16 23:26:17 [INFO][initConnInfo] trying to get vm ip address for provisioner
+2023/12/16 23:26:17 [DEBUG][initConnInfo] retrying for at most  20m0s minutes before giving up
+2023/12/16 23:26:17 [DEBUG][initConnInfo] retries will end at 2023-12-16 23:46:17.586583 +0800 HKT m=+1254.760562005
+2023/12/16 23:26:20 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+2023/12/16 23:26:25 [INFO][initConnInfo] found working QEMU Agent
+2023/12/16 23:26:25 [DEBUG][initConnInfo] interfaces found: [{00:00:00:00:00:00 [127.0.0.1 ::1] lo map[rx-bytes:1064 rx-dropped:0 rx-errs:0 rx-packets:14 tx-bytes:1064 tx-dropped:0 tx-errs:0 tx-packets:14]} {7a:00:00:00:03:08 [192.168.2.196 fe80::7800:ff:fe00:308] eth0 map[rx-bytes:572 rx-dropped:0 rx-errs:0 rx-packets:6 tx-bytes:1182 tx-dropped:0 tx-errs:0 tx-packets:15]} {e2:74:02:54:0d:8f [192.168.8.11 fe80::e074:2ff:fe54:d8f] eth1 map[rx-bytes:1038 rx-dropped:0 rx-errs:0 rx-packets:9 tx-bytes:1293 tx-dropped:0 tx-errs:0 tx-packets:17]}]
+2023/12/16 23:26:25 [INFO][initConnInfo] trying to find IP address of first network card
+2023/12/16 23:26:25 [DEBUG][initConnInfo] checking network card...
+2023/12/16 23:26:25 [DEBUG][initConnInfo] checking network card...
+2023/12/16 23:26:26 [DEBUG][initConnInfo] checking network card loop
+2023/12/16 23:26:26 [DEBUG][initConnInfo] Found IP address: 192.168.2.196
+2023/12/16 23:26:26 [DEBUG][initConnInfo] sshHost not empty: 192.168.2.196
+2023/12/16 23:26:26 [DEBUG][initConnInfo] vm has a cloud-init configuration
+2023/12/16 23:26:26 [DEBUG][initConnInfo] cloudinitcheck vm state map[agent:1 balloon:1.7179869184e+10 ballooninfo:map[actual:1.7179869184e+10 free_mem:1.6037769216e+10 last_update:1.702740385e+09 major_page_faults:952 max_mem:1.7179869184e+10 mem_swapped_in:0 mem_swapped_out:0 minor_page_faults:483249 total_mem:1.6501723136e+10] blockstat:map[ide2:map[account_failed:true account_invalid:true failed_flush_operations:0 failed_rd_operations:0 failed_unmap_operations:0 failed_wr_operations:0 flush_operations:0 flush_total_time_ns:0 idle_time_ns:3.963495699e+09 invalid_flush_operations:0 invalid_rd_operations:0 invalid_unmap_operations:0 invalid_wr_operations:0 rd_bytes:344258 rd_merged:0 rd_operations:96 rd_total_time_ns:1.0032461e+07 timed_stats:[] unmap_bytes:0 unmap_merged:0 unmap_operations:0 unmap_total_time_ns:0 wr_bytes:0 wr_highest_offset:0 wr_merged:0 wr_operations:0 wr_total_time_ns:0] scsi0:map[account_failed:true account_invalid:true failed_flush_operations:0 failed_rd_operations:0 failed_unmap_operations:0 failed_wr_operations:0 flush_operations:88 flush_total_time_ns:2.55365885e+08 idle_time_ns:6.1823399e+07 invalid_flush_operations:0 invalid_rd_operations:0 invalid_unmap_operations:0 invalid_wr_operations:0 rd_bytes:2.39694336e+08 rd_merged:0 rd_operations:9859 rd_total_time_ns:1.103671404e+09 timed_stats:[] unmap_bytes:0 unmap_merged:0 unmap_operations:0 unmap_total_time_ns:0 wr_bytes:1.6346112e+07 wr_highest_offset:1.06955825152e+11 wr_merged:0 wr_operations:289 wr_total_time_ns:1.82009974e+08]] cpu:0 cpus:4 disk:0 diskread:2.40038594e+08 diskwrite:1.6346112e+07 freemem:1.6037769216e+10 ha:map[managed:0] maxdisk:1.073741824e+11 maxmem:1.7179869184e+10 mem:4.6395392e+08 name:okd-bastion netin:2033 netout:2475 nics:map[tap800i0:map[netin:742 netout:1182] tap800i1:map[netin:1291 netout:1293]] pid:718588 proxmox-support:map[backup-max-workers:true pbs-dirty-bitmap:true pbs-dirty-bitmap-migration:true pbs-dirty-bitmap-savevm:true pbs-library-version:1.3.1 (4d450bb294cac5316d2f23bf087c4b02c0543d79) pbs-masterkey:true query-bitmap-info:true] qmpstatus:running running-machine:pc-i440fx-7.1+pve0 running-qemu:7.1.0 serial:1 status:running uptime:15 vmid:800]
+2023/12/16 23:26:26 [DEBUG][initConnInfo] ipconfig0 interfaces: [{00:00:00:00:00:00 [127.0.0.1 ::1] lo map[rx-bytes:1064 rx-dropped:0 rx-errs:0 rx-packets:14 tx-bytes:1064 tx-dropped:0 tx-errs:0 tx-packets:14]} {7a:00:00:00:03:08 [192.168.2.196 fe80::7800:ff:fe00:308] eth0 map[rx-bytes:572 rx-dropped:0 rx-errs:0 rx-packets:6 tx-bytes:1182 tx-dropped:0 tx-errs:0 tx-packets:15]} {e2:74:02:54:0d:8f [192.168.8.11 fe80::e074:2ff:fe54:d8f] eth1 map[rx-bytes:1038 rx-dropped:0 rx-errs:0 rx-packets:9 tx-bytes:1293 tx-dropped:0 tx-errs:0 tx-packets:17]}]
+2023/12/16 23:26:26 [DEBUG][initConnInfo] found an ip configuration
+2023/12/16 23:26:26 [DEBUG][initConnInfo] this is the vm configuration: 192.168.2.196 22
+2023/12/16 23:26:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/16 23:26:27 [DEBUG] VM status: running
