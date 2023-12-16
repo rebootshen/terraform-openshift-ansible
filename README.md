@@ -209,3 +209,50 @@ This tutorial can be used for OCP as well. In this case you also need the RedHat
 https://cloud.redhat.com/openshift/install/metal/user-provisioned
 A Linux workstation (or VM) to run the openshift-install installer. This workstation must also be accessible from the cluster, since you’ll run a web server on it to provide ignition files to the CoreOS and scripts. Preferably in the same network.
 Hypervisor for 4-10 VMs
+
+### User change:
+1. openshift/terraform-openshift-ansible/1-okd-vm-terraform/terraform.tfvars
+ciuser     = "oc"
+2. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/vars/main.yaml
+user:
+  name: oc
+  home: /home/oc
+3. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/ansible.cfg
+[defaults]
+inventory = inventory/hosts.ini
+remote_user = oc
+
+#################
+
+### Domain change:
+1. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/vars/main.yaml
+dns:
+  domain: example.com
+  clusterid: okd
+2. macbook /etc/hosts
+#192.168.8.11 console-openshift-console.apps.okd.homelab.local 
+#192.168.8.11 oauth-openshift.apps.okd.homelab.local
+#192.168.8.11 superset-openshift-operators.apps.okd.homelab.local
+#192.168.8.11 api.okd.homelab.local
+
+192.168.8.11 console-openshift-console.apps.okd.example.com
+192.168.8.11 oauth-openshift.apps.okd.example.com
+192.168.8.11 superset-openshift-operators.apps.okd.example.com
+192.168.8.11 api.okd.example.com
+
+##################
+
+### Bastion Ip change:
+1. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/inventory/hosts.ini
+[service]
+192.168.8.11 new_hostname=lab-valet
+
+2. fpSenseFW
+Firewall/ NAT/ Port Forward
+WAN TCP * * 192.168.8.11 22      192.168.2.196 443       ansible ssh access
+
+3. macbook /etc/hosts
+192.168.8.11 console-openshift-console.apps.okd.example.com
+192.168.8.11 oauth-openshift.apps.okd.example.com
+192.168.8.11 superset-openshift-operators.apps.okd.example.com
+192.168.8.11 api.okd.example.com
