@@ -146,7 +146,7 @@
       - { src: templates/install-config.yaml.j2,  dest: install-config-base.yaml }
     notify:
     - Restart DNS
-    - Restart TFTP    # May not be necessary
+    #- Restart TFTP    # May not be necessary
     - Restart DHCP
     - Restart haproxy
 
@@ -265,8 +265,10 @@
  # Generating the key that will be used by OKD to communicate will all nodes.
     - name: keygen
       community.crypto.openssh_keypair:
-        path: "'{{ user.home }}'/.ssh/id_rsa"    #ssh_okd
+        path: "{{ user.home }}/.ssh/id_rsa"    #ssh_okd
         owner: '{{ user.name }}'
+      tags:
+        - pxe
 
     - name: get remote file contents
       command: "cat '{{ user.home }}'/.ssh/id_rsa.pub"    #ssh_okd.pub
@@ -303,7 +305,7 @@
       vars:
         pull: "'{{ lookup('file', './files/pull_secret.txt') }}'"  #must add single qoute at begin and end
       lineinfile: 
-        path: "'{{ user.home }}'/install_dir/install-config.yaml"
+        path: "{{ user.home }}/install_dir/install-config.yaml"
         regexp: '^pullSecret:'
         # To make sure you don't run into escaping quotes, double quotes... 
         #just make sure your pull secret in the file is between single quotes, and double quotes everywhere else :!env_var 
