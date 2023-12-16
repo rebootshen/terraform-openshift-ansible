@@ -40,4 +40,4 @@ override.tf.json
 terraform.rc
 .terraform.lock.hcl
 files/pull_secret.txt
-
+**.log
