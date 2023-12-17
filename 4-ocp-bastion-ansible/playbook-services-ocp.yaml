@@ -372,16 +372,15 @@
       tags:
         - pxe
 
-    - name: Change install_dir ownership
-      file: 
-        path: "{{ user.home }}/install_dir"
-        recurse: yes 
-        state: directory
-        owner: "{{ user.name }}"
-        group: "{{ user.name }}"
-        mode: 0755
-      tags:
-        - dir
+    # - name: Change install_dir ownership
+    #   file: 
+    #     path: /home/ansiblebot/install_dir
+    #     recurse: yes 
+    #     state: directory
+    #     owner: ansiblebot
+    #     group: ansiblebot
+    #     mode: 0755
+
     - name: create PXE files
       become: yes
       template:

@@ -81,7 +81,7 @@ resource "proxmox_vm_qemu" "okd-bastion" {
 
   disk {
     slot    = 0
-    size    = "100G"
+    size    = "80G"
     type    = "scsi"
     storage = "oc"
     # 1 will cause error "Error: VM 100 already running"
@@ -151,7 +151,7 @@ resource "proxmox_vm_qemu" "okd-pxe-nodes" {
 
   disk {
     slot    = 0
-    size    = "100G"
+    size    = "80G"
     type    = "scsi"
     storage = "oc"
     # 1 will cause error "Error: VM 100 already running"

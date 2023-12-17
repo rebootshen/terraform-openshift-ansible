@@ -56,49 +56,102 @@ Download pull secret
 
 # OKD
 
-
+## 01-okd-vm-terraform
 https://github.com/stratokumulus/proxmox-openshift-setup/blob/main/Readme.md
 
 terraform init
 terraform plan
 terraform apply
 
+## 02-okd-bastion-ansible
 ansible-playbook playbook-services.yaml
 
-start the bootstrap  # till login screen
+## start bootstrap and master nodes
+start the bootstrap  # till login screen, then start master
 start the masters  # ssh into bastion at same time
 
 #service bastion server
-ssh ansiblebot@192.168.8.241
+ssh oc@192.168.8.11
 openshift-install --dir=install_dir/ wait-for bootstrap-complete --log-level=info
 
 '''
-INFO Waiting up to 20m0s (until 7:47PM) for the Kubernetes API at https://api.okd.homelab.local:6443... 
+INFO Waiting up to 20m0s (until 7:47PM) for the Kubernetes API at https://api.okd.example.com:6443... 
 INFO API v1.25.0-2653+a34b9e9499e6c3-dirty up     
 INFO Waiting up to 30m0s (until 7:57PM) for bootstrapping to complete... 
 INFO It is now safe to remove the bootstrap resources 
 INFO Time elapsed: 18m8s 
 '''
 
+#ssh into bootstrap at same time
+
+[Macbook]
+ssh oc@192.168.8.11
+[oc@okd-bastion ~]$ 
+ssh core@192.168.2.189
+[core@bootstrap ~]$
+journalctl -b -f -u release-image.service -u bootkube.service
+'''
+Dec 16 23:44:43 bootstrap bootkube.sh[8264]: bootkube.service complete
+Dec 16 23:44:43 bootstrap systemd[1]: bootkube.service: Deactivated successfully.
+Dec 16 23:44:43 bootstrap systemd[1]: bootkube.service: Consumed 7.037s CPU time.
+'''
+
+## if master hit issue:
+
+oc get csr | grep Pending
+oc get csr -o go-template='{{range .items}}{{if not .status}}{{.metadata.name}}{{"\n"}}{{end}}{{end}}' | xargs --no-run-if-empty oc adm certificate approve
+
+######
+ssh oc@192.168.8.11
+[oc@okd-bastion ~]$ openshift-install --dir=install_dir/ wait-for bootstrap-complete --log-level=info
+
+ssh oc@192.168.8.11
+[oc@okd-bastion ~]$ ssh core@192.168.2.189
+[core@bootstrap ~]$ journalctl -b -f -u release-image.service -u bootkube.service
+
+[oc@okd-bastion ~]$ ssh core@192.168.2.190
+[core@master0 ~]$ journalctl -f
+
+[oc@okd-bastion ~]$ cat /etc/resolv.conf 
+search example.com okd.example.com
+nameserver 192.168.2.196
+nameserver 192.168.8.53
+[oc@okd-bastion ~]$ 
+
+[core@master0 ~]$ cat /etc/resolv.conf 
+nameserver 192.168.2.196
+search okd.example.com
+
+[core@master0 ~]$ ping www.google.com
+PING www.google.com (172.217.24.100) 56(84) bytes of data.
+64 bytes from sin10s07-in-f100.1e100.net (172.217.24.100): icmp_seq=1 ttl=113 time=31.7 ms
 
 
+[oc@okd-bastion ~]
+export KUBECONFIG=~/install_dir/auth/kubeconfig
+oc get nodes
+oc get csr -o go-template='{{range .items}}{{if not .status}}{{.metadata.name}}{{"\n"}}{{end}}{{end}}' | xargs oc adm certificate approve
+
+
+## remove bootstrap and start worker nodes
 #Once I get the bootstrap successful message
-vi /etc/haproxy/haproxy.cfg  # comment out all lines that contain the word bootstrap
+sudo vi /etc/haproxy/haproxy.cfg  # comment out all lines that contain the word bootstrap
 #server      bootstrap 192.168.2.189:6443 check
 #server      bootstrap 192.168.2.189:22623 check
-systemctl restart haproxy.service
+sudo systemctl restart haproxy.service
 
 start the workers # ssh into bastion at same time
 
 #service bastion server
-ssh ansiblebot@192.168.8.241
+ssh oc@192.168.8.11
 openshift-install --dir=install_dir/ wait-for install-complete --log-level=info
 
 #start another terminal
-ssh ansiblebot@192.168.8.241
+ssh oc@192.168.8.11
 export KUBECONFIG=~/install_dir/auth/kubeconfig
 
 #Aftert 2 or 3 reboots, the worker nodes will appear to get stuck
+#sometimes during master node up, also need approve csr
 oc get csr | grep Pending
 oc get csr -o go-template='{{range .items}}{{if not .status}}{{.metadata.name}}{{"\n"}}{{end}}{{end}}' | xargs --no-run-if-empty oc adm certificate approve
 
@@ -107,44 +160,54 @@ watch -n 5 oc get co
 
 #command openshift-install wait-for install-complete ... to finish, as it will give you the info you need to connect to your cluster (like the random password for the kubeadmin account).
 
-[ansiblebot@lab-valet ~]$ openshift-install --dir=install_dir/ wait-for install-complete --log-level=info
-INFO Waiting up to 40m0s (until 10:42PM) for the cluster at https://api.okd.homelab.local:6443 to initialize... 
+[oc@lab-valet ~]$ openshift-install --dir=install_dir/ wait-for install-complete --log-level=info
+INFO Waiting up to 40m0s (until 10:42PM) for the cluster at https://api.okd.example.com:6443 to initialize... 
 INFO Checking to see if there is a route at openshift-console/console... 
-INFO Install complete!                            
-INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/ansiblebot/install_dir/auth/kubeconfig' 
-INFO Access the OpenShift web-console here: https://console-openshift-console.apps.okd.homelab.local 
-INFO Login to the console with user: "kubeadmin", and password: "Jd8vx-xI5tC-pBTmY-i6K6T" 
-INFO Time elapsed: 16m1s  
+INFO Install complete!                                                       
+INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/oc/install_dir/auth/kubeconfig' 
+INFO Access the OpenShift web-console here: https://console-openshift-console.apps.okd.example.com 
+INFO Login to the console with user: "kubeadmin", and password: "vI9en-xsM3p-F3fUt-5oZvM" 
+INFO Time elapsed: 6s 
 
+## Access by browser
 macbook:
 sudo vi /etc/hosts
-192.168.8.241 console-openshift-console.apps.okd.homelab.local
-192.168.8.241 oauth-openshift.apps.okd.homelab.local
-192.168.8.241 superset-openshift-operators.apps.okd.homelab.local
+192.168.8.11 console-openshift-console.apps.okd.example.com
+192.168.8.11 oauth-openshift.apps.okd.example.com
+192.168.8.11 superset-openshift-operators.apps.okd.example.com
 
-192.168.8.241 api.okd.homelab.local
+192.168.8.11 api.okd.example.com
 
 
-https://console-openshift-console.apps.okd.homelab.local 
+https://console-openshift-console.apps.okd.example.com 
 kubeadmin :  Jd8vx-xI5tC-pBTmY-i6K6T
 
-https://oauth-openshift.apps.okd.homelab.local/
+https://oauth-openshift.apps.okd.example.com/
 
+## check certificate expired date and waiting 24 hours for renew
+[oc@okd-bastion ~]
+
+oc get secret -A -o json | jq -r ' .items[] | select( .metadata.annotations."auth.openshift.io/certificate-not-after" | .!=null and fromdateiso8601<='$( date --date='+1year' +%s )') | "expiration: \( .metadata.annotations."auth.openshift.io/certificate-not-after" ) \( .metadata.namespace ) \( .metadata.name )" ' | sort | column -t
+
+expiration:  2023-12-18T00:21:35Z  openshift-kube-apiserver                    aggregator-client
+expiration:  2023-12-18T00:21:35Z  openshift-kube-apiserver-operator           aggregator-client-signer
+expiration:  2023-12-18T00:21:37Z  openshift-kube-controller-manager-operator  csr-signer
+expiration:  2023-12-18T00:21:37Z  openshift-kube-controller-manager-operator  csr-signer-signer
+
+4 will expire in 24 hours
 
 # OCP
 ## Download URLs
-User-provisioned infrastructure: 可下載 OpenShift Installer、CLI 與 Pull secrets(需要登入 Red Hat 註冊帳號權限)
-Public OpenShift 4.13 Mirror: 可下載 OpenShift Installer、CLI 與 OPM。
-openshift-client-linux.tar.gz: 包含 oc 與 kubectl CLI 工具。
-openshift-install-linux.tar.gz: 包含 openshift-install 工具。用於建立 OpenShift auth、igntion 等設定檔案。
-opm-linux.tar.gz: 用於管理 Operator Hub 與 mirror 相關 images。
-Public RHCOS 4.13 Mirror: 可下載 RHCOS 4.8 相關 VM images。
-若手動安裝以下載 rhcos-live.x86_64.iso 為主。若想要控管使用版本，請選擇有標示版本的 live iso。
-FET vSphere 安裝請以這方式進行。
-若以 PXE 方式安裝，則下載以下映像檔:
-rhcos-live-initramfs.x86_64.img
-rhcos-live-kernel-x86_64
-rhcos-live-rootfs.x86_64.img
+Manual install:
+    rhcos-live.x86_64.iso
+
+For PXE
+  client: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz
+  install: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux.tar.gz
+  kernel: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-kernel-x86_64
+  rootfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-rootfs.x86_64.img
+  initramfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-initramfs.x86_64.img
+  
 
 ### initialise
 terraform init --upgrade
@@ -256,3 +319,14 @@ WAN TCP * * 192.168.8.11 22      192.168.2.196 443       ansible ssh access
 192.168.8.11 oauth-openshift.apps.okd.example.com
 192.168.8.11 superset-openshift-operators.apps.okd.example.com
 192.168.8.11 api.okd.example.com
+
+### Bastion hostname change:
+1. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/vars/main.yaml
+valet:
+  name: okd-bastion
+  ip: 192.168.2.196
+  macaddr: 7A:00:00:00:03:08
+
+2. openshift/terraform-openshift-ansible/2-okd-bastion-ansible/inventory/hosts.ini
+[service]
+192.168.8.11 new_hostname=okd-bastion
