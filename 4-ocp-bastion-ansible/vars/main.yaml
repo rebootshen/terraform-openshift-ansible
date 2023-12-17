@@ -1,24 +1,31 @@
 ---
 ppc64le: false
 uefi: false
-disk: sda                                  #disk where you are installing RHCOS on the masters/workers
+disk: /dev/sda                                  #disk where you are installing RHCOS on the masters/workers
 ocp:
   client: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz
   install: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux.tar.gz
-  kernel: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-kernel-x86_64
   rootfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-rootfs.x86_64.img
+  kernel: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-kernel-x86_64
   initramfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-initramfs.x86_64.img
-  
+  #kernel: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-installer-kernel-x86_64
+  #initramfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-installer-initramfs.x86_64.img
+jq_file: https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
 
+main_dns: 192.168.8.53
+
+user:
+  name: oc
+  home: /home/oc
 helper:
-  name: "bastion"                          #hostname for your helper node
+  name: "ocp-bastion"                          #hostname for your helper node
   ipaddr: "192.168.100.250"                #current IP address of the helper
   networkifacename: "eth0"                 #interface of the helper node,ACTUAL name of the interface, NOT the NetworkManager name
 dns:
   domain: "example.com"                    #DNS server domain. Should match  baseDomain inside the install-config.yaml file.
   clusterid: "ocp4"                        #needs to match what you will for metadata.name inside the install-config.yaml file
-  forwarder1: "8.8.8.8"                    #DNS forwarder
-  forwarder2: "1.1.1.1"                    #second DNS forwarder
+  forwarder1: "192.168.100.1"                    #DNS forwarder
+  forwarder2: "192.168.8.53"                    #second DNS forwarder
   lb_ipaddr: "{{ helper.ipaddr }}"         #Load balancer IP, it is optional, the default value is helper.ipaddr
 dhcp:
   router: "192.168.100.1"                  #default gateway of the network assigned to the masters/workers

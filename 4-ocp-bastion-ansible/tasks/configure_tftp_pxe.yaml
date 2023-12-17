@@ -1,13 +1,6 @@
 ---
 # Configure OCP4 TFTP/PXE on Helper Node
 
-- hosts: all
-  vars_files:
-    - ../vars/main.yml
-  handlers:
-  - import_tasks: ../handlers/main.yml
-
-  tasks:
   - name: Set the bootstrap specific tftp file
     template:
       src: ../templates/pxe-bootstrap.j2

@@ -344,7 +344,8 @@
     - name: Copy all files to www, setup selinux,firewall
       become: yes
       shell: |
-        cp -R {{ user.home }}/install_dir/* /var/www/html/okd4/
+        #cp -R {{ user.home }}/install_dir/* /var/www/html/okd4/
+        cp -v {{ user.home }}/install_dir/*.ign /var/www/html/okd4/
         restorecon -RFv /var/www/html/okd4
         restorecon -RFv /var/www/html/
         restorecon -RFv /var/lib/tftpboot/fcos
@@ -382,6 +383,7 @@
         mode: 0755
       tags:
         - dir
+
     - name: create PXE files
       become: yes
       template:

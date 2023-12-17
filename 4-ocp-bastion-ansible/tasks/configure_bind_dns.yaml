@@ -1,13 +1,6 @@
 ---
 # Configure OCP4 DNS Server on Helper Node
 
-- hosts: all
-  vars_files:
-    - ../vars/main.yml
-  handlers:
-  - import_tasks: ../handlers/main.yml
-
-  tasks:
   - name: Setup named configuration files
     block:
     - name: Write out named file
@@ -15,7 +8,7 @@
         src: ../templates/named.conf.j2
         dest: /etc/named.conf
       notify:
-        - restart bind
+        - restart dns
     - name: Set zone serial number
       shell: "/usr/local/bin/set-dns-serial.sh"
       register: dymanicserialnumber
@@ -30,7 +23,7 @@
         dest: /var/named/zonefile.db
         mode: '0644'
       notify:
-        - restart bind
+        - restart dns
 
     - name: Write out reverse zone file
       template:
@@ -38,4 +31,4 @@
         dest: /var/named/reverse.db
         mode: '0644'
       notify:
-        - restart bind
+        - restart dns
