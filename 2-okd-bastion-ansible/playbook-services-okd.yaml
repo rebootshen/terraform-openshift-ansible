@@ -24,7 +24,7 @@
   # - name: No SELinux, thanks
   #   ansible.posix.selinux:
   #     state: disabled
-  - name: Install git vim wget curl bash-completion tree tar libselinux-python3 firewalld
+  - name: Install git vim wget curl bash-completion tree tar libselinux-python3 firewalld traceroute
     package: 
       name:
         - git
@@ -36,6 +36,7 @@
         - tar
         - libselinux-python3
         - firewalld
+        - traceroute
       state: present
     ignore_errors: yes # if packages already exists
 
@@ -371,15 +372,16 @@
       tags:
         - pxe
 
-    # - name: Change install_dir ownership
-    #   file: 
-    #     path: /home/ansiblebot/install_dir
-    #     recurse: yes 
-    #     state: directory
-    #     owner: ansiblebot
-    #     group: ansiblebot
-    #     mode: 0755
-
+    - name: Change install_dir ownership
+      file: 
+        path: "{{ user.home }}/install_dir"
+        recurse: yes 
+        state: directory
+        owner: "{{ user.name }}"
+        group: "{{ user.name }}"
+        mode: 0755
+      tags:
+        - dir
     - name: create PXE files
       become: yes
       template:
@@ -395,8 +397,8 @@
         - { macaddr: "{{ worker_nodes[0].macaddr }}", role: worker}
         - { macaddr: "{{ worker_nodes[1].macaddr }}", role: worker}
         - { macaddr: "{{ worker_nodes[2].macaddr }}", role: worker}
-      notify:
-        - Restart TFTP
+      #notify:
+      #  - Restart TFTP
       tags:
         - pxe
         - last

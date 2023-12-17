@@ -30,17 +30,16 @@ provider "proxmox" {
 
 locals {
   vm_settings0 = {
-    "bastion-ocp" = { macaddr = "42:8F:8D:9D:03:7B", cores = 4, ram = 16384, vmid = 610, os = "ocp-centos-template", boot = true }
+    "ocp-bastion" = { macaddr = "42:8F:8D:9D:03:7B", cores = 4, ram = 16384, vmid = 700, os = "ocp-centos-template", boot = true }
   }
   vm_settings = {
-    "bootstrap"     = { macaddr = "16:61:92:B5:49:65", cores = 4, ram = 16384, vmid = 700, os = "pxe-client", boot = false },
     "master01"      = { macaddr = "C6:A1:86:52:B8:D8", cores = 4, ram = 16384, vmid = 701, os = "pxe-client", boot = false },
     "master02"      = { macaddr = "42:A4:27:90:1F:EF", cores = 4, ram = 16384, vmid = 702, os = "pxe-client", boot = false },
     "master03"      = { macaddr = "DE:33:A3:03:E4:FA", cores = 4, ram = 16384, vmid = 703, os = "pxe-client", boot = false },
     "worker01"      = { macaddr = "7E:27:C0:51:46:42", cores = 4, ram = 8192, vmid = 704, os = "pxe-client", boot = false },
     "worker02"      = { macaddr = "9E:56:08:AD:5E:32", cores = 4, ram = 8192, vmid = 705, os = "pxe-client", boot = false },
     "worker03"      = { macaddr = "22:D7:CF:46:24:70", cores = 4, ram = 8192, vmid = 706, os = "pxe-client", boot = false },
-    #"bastion" = { macaddr = "42:8F:8D:9D:03:7B", cores = 4, ram = 16384, vmid = 610, os = "ocp-centos-template", boot = true }
+    "bootstrap"     = { macaddr = "16:61:92:B5:49:65", cores = 4, ram = 16384, vmid = 707, os = "pxe-client", boot = false }
   }
   bridge = "vmbr1"
   vlan   = 2
@@ -50,7 +49,7 @@ locals {
 
 # can separate into oc-master.tf
 # Create a new VM from a Full-Clone
-resource "proxmox_vm_qemu" "bastion-ocp" {
+resource "proxmox_vm_qemu" "ocp-bastion" {
   for_each    = local.vm_settings0
   name        = each.key
   desc        = "Openshift Share Services"
@@ -82,7 +81,7 @@ resource "proxmox_vm_qemu" "bastion-ocp" {
 
   disk {
     slot    = 0
-    size    = "100G"
+    size    = "80G"
     type    = "scsi"
     storage = "oc"
     # 1 will cause error "Error: VM 100 already running"
@@ -109,7 +108,7 @@ resource "proxmox_vm_qemu" "bastion-ocp" {
   }
 
   ipconfig0 = "ip=192.168.100.250/24,gw=192.168.100.1"
-  ipconfig1 = "ip=192.168.8.147/24"
+  ipconfig1 = "ip=192.168.8.10/24"
 
   ciuser     = var.ciuser
   cipassword = var.cipassword
@@ -152,7 +151,7 @@ resource "proxmox_vm_qemu" "ocp-pxe-nodes" {
 
   disk {
     slot    = 0
-    size    = "100G"
+    size    = "80G"
     type    = "scsi"
     storage = "oc"
     # 1 will cause error "Error: VM 100 already running"

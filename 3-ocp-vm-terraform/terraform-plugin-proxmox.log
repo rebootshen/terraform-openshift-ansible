@@ -464,3 +464,169 @@
 2023/12/14 10:42:24 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
 2023/12/14 10:42:24 [DEBUG][QemuVmCreate] vm creation done!
 2023/12/14 10:42:25 [DEBUG] VM status: stopped
+2023/12/17 11:16:33 [DEBUG] VM status: stopped
+2023/12/17 11:16:33 [DEBUG] VM status: stopped
+2023/12/17 11:16:34 [DEBUG] VM status: stopped
+2023/12/17 11:16:34 [DEBUG] VM status: stopped
+2023/12/17 11:16:34 [DEBUG] VM status: stopped
+2023/12/17 11:16:34 [DEBUG] VM status: stopped
+2023/12/17 11:16:35 [DEBUG] VM status: stopped
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:25:19 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/17 11:25:19 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/17 11:25:19 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/17 11:25:19 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/17 11:25:26 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:26 [DEBUG] VM status: stopped
+2023/12/17 11:25:26 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:28 [DEBUG] VM status: stopped
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/17 11:25:28 [DEBUG] VM status: stopped
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] checking for duplicate name: ocp-bastion
+2023/12/17 11:25:28 [DEBUG][QemuVmCreate] cloning VM
+2023/12/17 11:25:30 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:30 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:30 [DEBUG] VM status: stopped
+2023/12/17 11:25:30 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/17 11:25:33 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:33 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:34 [DEBUG] VM status: stopped
+2023/12/17 11:25:35 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:35 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:36 [DEBUG] VM status: stopped
+2023/12/17 11:25:37 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:25:37 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:25:38 [DEBUG] VM status: stopped
+2023/12/17 11:27:58 [DEBUG] VM status: stopped
+2023/12/17 11:27:58 [DEBUG] VM status: stopped
+2023/12/17 11:27:58 [DEBUG] VM status: stopped
+2023/12/17 11:27:59 [DEBUG] VM status: stopped
+2023/12/17 11:27:59 [DEBUG] VM status: stopped
+2023/12/17 11:27:59 [DEBUG] VM status: stopped
+2023/12/17 11:28:00 [DEBUG] VM status: stopped
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/17 11:28:17 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/17 11:28:17 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:28:17 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/17 11:28:24 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:24 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:25 [DEBUG] VM status: stopped
+2023/12/17 11:28:25 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/17 11:28:26 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:26 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:26 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:27 [DEBUG] VM status: stopped
+2023/12/17 11:28:27 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/17 11:28:27 [DEBUG] VM status: stopped
+2023/12/17 11:28:27 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/17 11:28:28 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:28 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:29 [DEBUG] VM status: stopped
+2023/12/17 11:28:29 [DEBUG][QemuVmCreate] checking for duplicate name: ocp-bastion
+2023/12/17 11:28:29 [DEBUG][QemuVmCreate] cloning VM
+2023/12/17 11:28:32 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:32 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:33 [DEBUG] VM status: stopped
+2023/12/17 11:28:34 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:34 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:35 [DEBUG] VM status: stopped
+2023/12/17 11:28:36 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:28:36 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:28:37 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:29 [DEBUG] VM status: stopped
+2023/12/17 11:30:30 [DEBUG] VM status: stopped
+2023/12/17 11:30:32 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:30:32 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:30:32 [DEBUG][QemuVmCreate] checking for duplicate name: ocp-bootstrap
+2023/12/17 11:30:32 [DEBUG][QemuVmCreate] checking for duplicate name: ocp-bastion
+2023/12/17 11:30:32 [DEBUG][QemuVmCreate] cloning VM
+2023/12/17 11:31:29 [DEBUG] VM status: stopped
+2023/12/17 11:31:29 [DEBUG] VM status: stopped
+2023/12/17 11:31:29 [DEBUG] VM status: stopped
+2023/12/17 11:31:30 [DEBUG] VM status: stopped
+2023/12/17 11:31:30 [DEBUG] VM status: stopped
+2023/12/17 11:31:30 [DEBUG] VM status: stopped
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG][QemuVmCreate] checking for duplicate name: master02
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG][QemuVmCreate] checking for duplicate name: worker01
+2023/12/17 11:38:27 [DEBUG][QemuVmCreate] checking for duplicate name: bootstrap
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG][QemuVmCreate] checking for duplicate name: master03
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:27 [DEBUG] setting computed for "unused_disk" from ComputedKeys
+2023/12/17 11:38:34 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:34 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:35 [DEBUG] VM status: stopped
+2023/12/17 11:38:35 [DEBUG][QemuVmCreate] checking for duplicate name: worker03
+2023/12/17 11:38:36 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:36 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:36 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:36 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:37 [DEBUG] VM status: stopped
+2023/12/17 11:38:37 [DEBUG] VM status: stopped
+2023/12/17 11:38:37 [DEBUG][QemuVmCreate] checking for duplicate name: master01
+2023/12/17 11:38:37 [DEBUG][QemuVmCreate] checking for duplicate name: worker02
+2023/12/17 11:38:38 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:38 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:38 [DEBUG][QemuVmCreate] checking for duplicate name: ocp-bastion
+2023/12/17 11:38:38 [DEBUG][QemuVmCreate] cloning VM
+2023/12/17 11:38:42 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:42 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:43 [DEBUG] VM status: stopped
+2023/12/17 11:38:44 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:44 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:44 [DEBUG] VM status: stopped
+2023/12/17 11:38:45 [DEBUG] VM status: stopped
+2023/12/17 11:38:46 [DEBUG][QemuVmCreate] oncreate = false, not starting VM
+2023/12/17 11:38:46 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:38:47 [DEBUG] VM status: stopped
+2023/12/17 11:39:14 [DEBUG][QemuVmCreate] starting VM
+2023/12/17 11:39:23 [INFO][initConnInfo] trying to get vm ip address for provisioner
+2023/12/17 11:39:23 [DEBUG][initConnInfo] retrying for at most  20m0s minutes before giving up
+2023/12/17 11:39:23 [DEBUG][initConnInfo] retries will end at 2023-12-17 11:59:23.915166 +0800 HKT m=+1256.490922265
+2023/12/17 11:39:26 [DEBUG][initConnInfo] check ip result error 500 QEMU guest agent is not running
+2023/12/17 11:39:32 [INFO][initConnInfo] found working QEMU Agent
+2023/12/17 11:39:32 [DEBUG][initConnInfo] interfaces found: [{00:00:00:00:00:00 [127.0.0.1 ::1] lo map[rx-bytes:1064 rx-dropped:0 rx-errs:0 rx-packets:14 tx-bytes:1064 tx-dropped:0 tx-errs:0 tx-packets:14]} {42:8f:8d:9d:03:7b [192.168.100.250 fe80::408f:8dff:fe9d:37b] eth0 map[rx-bytes:402 rx-dropped:0 rx-errs:0 rx-packets:5 tx-bytes:912 tx-dropped:0 tx-errs:0 tx-packets:12]} {1e:7d:9d:8f:0b:8c [192.168.8.10 fe80::1c7d:9dff:fe8f:b8c] eth1 map[rx-bytes:909 rx-dropped:0 rx-errs:0 rx-packets:7 tx-bytes:1049 tx-dropped:0 tx-errs:0 tx-packets:14]}]
+2023/12/17 11:39:32 [INFO][initConnInfo] trying to find IP address of first network card
+2023/12/17 11:39:32 [DEBUG][initConnInfo] checking network card...
+2023/12/17 11:39:32 [DEBUG][initConnInfo] checking network card...
+2023/12/17 11:39:32 [DEBUG][initConnInfo] checking network card loop
+2023/12/17 11:39:32 [DEBUG][initConnInfo] Found IP address: 192.168.100.250
+2023/12/17 11:39:32 [DEBUG][initConnInfo] sshHost not empty: 192.168.100.250
+2023/12/17 11:39:32 [DEBUG][initConnInfo] vm has a cloud-init configuration
+2023/12/17 11:39:32 [DEBUG][initConnInfo] cloudinitcheck vm state map[agent:1 balloon:1.7179869184e+10 ballooninfo:map[actual:1.7179869184e+10 free_mem:1.609654272e+10 last_update:1.702784371e+09 major_page_faults:782 max_mem:1.7179869184e+10 mem_swapped_in:0 mem_swapped_out:0 minor_page_faults:233728 total_mem:1.6501723136e+10] blockstat:map[ide2:map[account_failed:true account_invalid:true failed_flush_operations:0 failed_rd_operations:0 failed_unmap_operations:0 failed_wr_operations:0 flush_operations:0 flush_total_time_ns:0 idle_time_ns:2.875811571e+09 invalid_flush_operations:0 invalid_rd_operations:0 invalid_unmap_operations:0 invalid_wr_operations:0 rd_bytes:344258 rd_merged:0 rd_operations:96 rd_total_time_ns:9.398437e+06 timed_stats:[] unmap_bytes:0 unmap_merged:0 unmap_operations:0 unmap_total_time_ns:0 wr_bytes:0 wr_highest_offset:0 wr_merged:0 wr_operations:0 wr_total_time_ns:0] scsi0:map[account_failed:true account_invalid:true failed_flush_operations:0 failed_rd_operations:0 failed_unmap_operations:0 failed_wr_operations:0 flush_operations:79 flush_total_time_ns:1.90009698e+08 idle_time_ns:2.18179116e+08 invalid_flush_operations:0 invalid_rd_operations:0 invalid_unmap_operations:0 invalid_wr_operations:0 rd_bytes:2.1546752e+08 rd_merged:0 rd_operations:8851 rd_total_time_ns:7.96243939e+08 timed_stats:[] unmap_bytes:0 unmap_merged:0 unmap_operations:0 unmap_total_time_ns:0 wr_bytes:1.5934464e+07 wr_highest_offset:8.3887153152e+10 wr_merged:0 wr_operations:242 wr_total_time_ns:1.21914069e+08]] cpu:0 cpus:4 disk:0 diskread:2.15811778e+08 diskwrite:1.5934464e+07 freemem:1.609654272e+10 ha:map[managed:0] maxdisk:8.589934592e+10 maxmem:1.7179869184e+10 mem:4.05180416e+08 name:ocp-bastion netin:1504 netout:2141 nics:map[tap700i0:map[netin:492 netout:1002] tap700i1:map[netin:1012 netout:1139]] pid:1.806256e+06 proxmox-support:map[backup-max-workers:true pbs-dirty-bitmap:true pbs-dirty-bitmap-migration:true pbs-dirty-bitmap-savevm:true pbs-library-version:1.3.1 (4d450bb294cac5316d2f23bf087c4b02c0543d79) pbs-masterkey:true query-bitmap-info:true] qmpstatus:running running-machine:pc-i440fx-7.1+pve0 running-qemu:7.1.0 serial:1 status:running uptime:15 vmid:700]
+2023/12/17 11:39:32 [DEBUG][initConnInfo] ipconfig0 interfaces: [{00:00:00:00:00:00 [127.0.0.1 ::1] lo map[rx-bytes:1064 rx-dropped:0 rx-errs:0 rx-packets:14 tx-bytes:1064 tx-dropped:0 tx-errs:0 tx-packets:14]} {42:8f:8d:9d:03:7b [192.168.100.250 fe80::408f:8dff:fe9d:37b] eth0 map[rx-bytes:582 rx-dropped:0 rx-errs:0 rx-packets:7 tx-bytes:1182 tx-dropped:0 tx-errs:0 tx-packets:15]} {1e:7d:9d:8f:0b:8c [192.168.8.10 fe80::1c7d:9dff:fe8f:b8c] eth1 map[rx-bytes:909 rx-dropped:0 rx-errs:0 rx-packets:7 tx-bytes:1139 tx-dropped:0 tx-errs:0 tx-packets:15]}]
+2023/12/17 11:39:32 [DEBUG][initConnInfo] found an ip configuration
+2023/12/17 11:39:32 [DEBUG][initConnInfo] this is the vm configuration: 192.168.100.250 22
+2023/12/17 11:39:32 [DEBUG][QemuVmCreate] vm creation done!
+2023/12/17 11:39:33 [DEBUG] VM status: running

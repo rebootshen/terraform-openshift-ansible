@@ -1,0 +1,56 @@
+---
+ppc64le: false
+uefi: false
+disk: sda                                  #disk where you are installing RHCOS on the masters/workers
+ocp:
+  client: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz
+  install: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-install-linux.tar.gz
+  kernel: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-kernel-x86_64
+  rootfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-rootfs.x86_64.img
+  initramfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-live-initramfs.x86_64.img
+  
+
+helper:
+  name: "bastion"                          #hostname for your helper node
+  ipaddr: "192.168.100.250"                #current IP address of the helper
+  networkifacename: "eth0"                 #interface of the helper node,ACTUAL name of the interface, NOT the NetworkManager name
+dns:
+  domain: "example.com"                    #DNS server domain. Should match  baseDomain inside the install-config.yaml file.
+  clusterid: "ocp4"                        #needs to match what you will for metadata.name inside the install-config.yaml file
+  forwarder1: "8.8.8.8"                    #DNS forwarder
+  forwarder2: "1.1.1.1"                    #second DNS forwarder
+  lb_ipaddr: "{{ helper.ipaddr }}"         #Load balancer IP, it is optional, the default value is helper.ipaddr
+dhcp:
+  router: "192.168.100.1"                  #default gateway of the network assigned to the masters/workers
+  bcast: "192.168.100.255"                 #broadcast address for your network
+  netmask: "255.255.255.0"                 #netmask that gets assigned to your masters/workers
+  poolstart: "192.168.100.10"              #First address in your dhcp address pool
+  poolend: "192.168.100.50"                #Last address in your dhcp address pool
+  ipid: "192.168.100.0"                    #ip network id for the range
+  netmaskid: "255.255.255.0"               #networkmask id for the range.
+  ntp: "time.google.com"                   #ntp server address
+  dns: ""                                  #domain name server, it is optional, the default value is set to helper.ipaddr
+bootstrap:
+  name: "bootstrap"                        #hostname (WITHOUT the fqdn) of the bootstrap node 
+  ipaddr: "192.168.100.10"                 #IP address that you want set for bootstrap node
+  macaddr: "16:61:92:B5:49:65"             #The mac address for dhcp reservation
+masters:
+  - name: "master01"                       #hostname (WITHOUT the fqdn) of the master node (x of 3)
+    ipaddr: "192.168.100.11"               #The IP address (x of 3) that you want set
+    macaddr: "C6:A1:86:52:B8:D8"           #The mac address for dhcp reservation
+  - name: "master02"
+    ipaddr: "192.168.100.12"
+    macaddr: "42:A4:27:90:1F:EF"
+  - name: "master03"
+    ipaddr: "192.168.100.13"
+    macaddr: "DE:33:A3:03:E4:FA"
+workers:
+  - name: "worker01"                       #hostname (WITHOUT the fqdn) of the worker node you want to set
+    ipaddr: "192.168.100.21"               #The IP address that you want set (1st node)
+    macaddr: "7E:27:C0:51:46:42"           #The mac address for dhcp reservation (1st node)
+  - name: "worker02"
+    ipaddr: "192.168.100.22"
+    macaddr: "9E:56:08:AD:5E:32"
+  - name: "worker03"
+    ipaddr: "192.168.100.23"
+    macaddr: "22:D7:CF:46:24:70"
