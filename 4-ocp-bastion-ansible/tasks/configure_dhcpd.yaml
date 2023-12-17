@@ -1,13 +1,6 @@
 ---
 # Setup OCP4 DHCP Server on Helper Node
 
-- hosts: all
-  vars_files:
-    - ../vars/main.yml
-  handlers:
-  - import_tasks: ../handlers/main.yml
-
-  tasks:
   - name: Write out dhcp file
     template:
       src: ../templates/dhcpd.conf.j2
