@@ -58,6 +58,7 @@
       - { name: /etc/named/zones,               owner: root,        mode: 0755 }
       - { name: tmp,                            owner: "{{ user.name }}",  mode: 0755 }
       - { name: install_dir,                    owner: "{{ user.name }}",  mode: 0755 }
+      - { name: .kube,                          owner: "{{ user.name }}",  mode: 0755 }
       - { name: /var/lib/tftpboot/rhcos,         owner: root,        mode: 0755 }
       - { name: /var/lib/tftpboot/pxelinux.cfg, owner: root,        mode: 0755 }
       #- { name: /var/nfsshare/registry,         owner: nobody,      mode: 0777 } 
@@ -300,7 +301,12 @@
       tags:
         - dir
 
-    - name: create PXE files
+    - name: Copy kubeconfig to .kube
+      command: "cp '{{ user.home }}'/install_dir/auth/kubeconfig '{{ user.home }}'/.kube/config"
+      tags:
+        - kube
+
+    - name: Create PXE files
       become: yes
       template:
         src: templates/pxe-{{ item.role }}.j2
