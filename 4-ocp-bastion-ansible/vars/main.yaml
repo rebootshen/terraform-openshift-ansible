@@ -12,7 +12,8 @@ ocp:
   #initramfs: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/latest/rhcos-installer-initramfs.x86_64.img
 jq_file: https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
 
-main_dns: 192.168.8.53
+#main_dns: 192.168.8.53
+main_dns: 192.168.8.1
 
 user:
   name: oc
@@ -25,7 +26,8 @@ dns:
   domain: "example.com"                    #DNS server domain. Should match  baseDomain inside the install-config.yaml file.
   clusterid: "ocp4"                        #needs to match what you will for metadata.name inside the install-config.yaml file
   forwarder1: "192.168.100.1"                    #DNS forwarder
-  forwarder2: "192.168.8.53"                    #second DNS forwarder
+  #forwarder2: "192.168.8.53"                    #second DNS forwarder
+  forwarder2: "192.168.8.1"                    #second DNS forwarder
   lb_ipaddr: "{{ helper.ipaddr }}"         #Load balancer IP, it is optional, the default value is helper.ipaddr
 dhcp:
   router: "192.168.100.1"                  #default gateway of the network assigned to the masters/workers
