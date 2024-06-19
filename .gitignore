@@ -42,3 +42,5 @@ terraform.rc
 files/pull_secret.txt
 
 *.log
+
+README-p.md
