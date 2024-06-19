@@ -302,7 +302,7 @@
         - dir
 
     - name: Copy kubeconfig to .kube
-      command: "cp '{{ user.home }}'/install_dir/auth/kubeconfig '{{ user.home }}'/.kube/config"
+      command: "cp '{{ user.home }}'/install_dir/auth/kubeconfig '{{ user.home }}'/.kube/config && chown '{{ user.name }}':'{{ user.name }}' '{{ user.home }}'/.kube/config"
       tags:
         - kube
 
