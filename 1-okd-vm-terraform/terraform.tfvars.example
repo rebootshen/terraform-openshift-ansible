@@ -1,0 +1,8 @@
+ciuser               = "oc"
+cipassword           = "set-from-env-local-PVE_USER_PASSWORD"
+ssh_key              = "ssh-ed25519 AAAA... you@example"
+proxmox_host         = "pve"
+template_name        = "ocp-centos-template"
+pm_api_url           = "https://proxmox.example.com:8006/api2/json"
+pm_api_token_id      = "terraform@pve!terraform-token"
+pm_api_token_secret  = "set-from-env-local-PROXMOX_API_SECRET"

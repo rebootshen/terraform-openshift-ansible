@@ -54,7 +54,7 @@ systemctl restart networking
 
 # setup pfSenseFW
 https://192.168.8.2/
-admin:REDACTED
+# Username and password: PFSENSE_ADMIN_USER and PFSENSE_ADMIN_PASSWORD in ../env.local
 
 
 Assign Interfaces first time to allow web UI access

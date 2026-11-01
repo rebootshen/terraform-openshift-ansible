@@ -12,9 +12,9 @@ set -x
 
 # prepare authentication API token
 #pveum role add TerraformProv -privs "Datastore.AllocateSpace Datastore.Audit Pool.Allocate Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt"
-#pveum user add terraform-REDACTED --password REDACTED
-#pveum aclmod / -user terraform-REDACTED -role TerraformProv
-#pveum user token add terraform-REDACTED terraform-token --privsep=0
+#pveum user add "$PVE_USER" --password "$PVE_USER_PASSWORD"   # values live in ../env.local
+#pveum aclmod / -user "$PVE_USER" -role TerraformProv
+#pveum user token add "$PVE_USER" terraform-token --privsep=0
 
 # cp to NAS iso folder
 #(tf-py310) samshen terraform-pve  (main)(pve-k8s:argocd)$ 

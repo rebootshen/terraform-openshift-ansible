@@ -1,5 +1,11 @@
 ## OpenShift 4 Ansible tasks and Jinja templates for Bastion/Helper Node setup
 
+The install sequence for this lab is in the [repository README](../README.md).
+
+Do not commit `files/pull_secret.txt`. Copy `files/pull_secret.txt.example`, or run `../scripts/load-env-local.sh` after filling `OCP_PULL_SECRET` in `../env.local`.
+
+The task file names on disk use `.yaml`. The tree below was kept from the original role notes and still says `.yml`.
+
 Here is the directory structure of all the files in this directory:
 
 ```bash
